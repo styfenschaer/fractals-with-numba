@@ -54,7 +54,7 @@ if __name__ == '__main__':
     zx, zy = barnsley_fern(n_points=NPOINTS)
     print('This took: {0} seconds'. format(round(time.time() - tic, 3)))
 
-    """ Plot and save the image).
+    """ Plot and save the image.
     You may want to change the marker size of the plot and the dpi and size of the figure to just play around. """
     fig, ax = plt.subplots(figsize=(16, 16))
 
