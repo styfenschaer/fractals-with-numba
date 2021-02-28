@@ -54,13 +54,8 @@ if __name__ == '__main__':
     zx, zy = barnsley_fern(n_points=NPOINTS)
     print('This took: {0} seconds'. format(round(time.time() - tic, 3)))
 
-<<<<<<< HEAD
     """ Plot and save the image).
     You may want to change the marker size of the plot and the dpi and size of the figure to just play around. """
-=======
-    """ Plot and save the image (~40x40 cm in this case).
-    You may want to change the marker size, colormap or dpi. """
->>>>>>> 1f37746361e0e51d42aa416c5e14763fd5ba75c0
     fig, ax = plt.subplots(figsize=(16, 16))
 
     cmap = plt.get_cmap('viridis', 1024)
