@@ -43,7 +43,7 @@ def barnsley_fern(n_points):
 
 if __name__ == '__main__':
     """ Number of points to compute """
-    NPOINTS = 1000000
+    NPOINTS = 10000000
 
     """ We first compute a small barnsley fern to jit compile the code (that's what numba does). 
     So we can see the full speed with the next function call next. """
@@ -61,8 +61,8 @@ if __name__ == '__main__':
     cmap = plt.get_cmap('viridis', 1024)
     norm = mpl.colors.Normalize(vmin=0, vmax=10)
     colors = cmap(norm(zy))  # we have a color gradient along the y-axis
-    ax.scatter(zx, zy, c=colors, marker='.', s=0.005)
+    ax.scatter(zx, zy, c=colors, marker='.', s=0.01, lw=0)
 
     fig.patch.set_facecolor('k')
     ax.axis('off')
-    plt.savefig('images/barnsley-fern.png', dpi=600)
+    plt.savefig('images/barnsley-fern.jpeg', dpi=600, quality=95, optimize=True)
