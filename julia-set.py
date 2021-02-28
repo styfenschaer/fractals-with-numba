@@ -52,13 +52,8 @@ if __name__ == '__main__':
     julia_matrix = julia(c=c, maxit=MAXIT, maxabs=MAXABS, xrange=xrange, yrange=yrange, xpixel=XPIXEL, ypixel=YPIXEL)
     print('This took: {0} seconds'. format(round(time.time() - tic, 3)))
 
-<<<<<<< HEAD
-    """ Plot and save the image.
-    You may want to change the marker size of the plot and the dpi and size of the figure to just play around. """
-=======
     """ Plot and save the image (~40x40 cm in this case).
     You may want to change the pixels, colormap and dpi. """
->>>>>>> 1f37746361e0e51d42aa416c5e14763fd5ba75c0
     fig, ax = plt.subplots(figsize=(16, 16))
     
     ax.imshow(julia_matrix, cmap='cividis')
