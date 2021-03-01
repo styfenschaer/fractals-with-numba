@@ -65,4 +65,4 @@ if __name__ == '__main__':
 
     fig.patch.set_facecolor('k')
     ax.axis('off')
-    plt.savefig('images/barnsley-fern.jpeg', dpi=600, pil_kwargs={'optimize': True, 'quality': 95}
+    plt.savefig('images/barnsley-fern.jpeg', dpi=600, pil_kwargs={'optimize': True, 'quality': 95})
