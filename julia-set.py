@@ -59,5 +59,5 @@ if __name__ == '__main__':
     ax.imshow(julia_matrix, cmap='cividis')
     
     ax.axis('off')
-    plt.savefig('images/julia-set.jpeg', dpi=300, quality=95, optimize=True))
+    plt.savefig('images/julia-set.jpeg', dpi=300, pil_kwargs={'optimize': True, 'quality': 95})
 
